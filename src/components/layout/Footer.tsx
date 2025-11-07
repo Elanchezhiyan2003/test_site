@@ -161,7 +161,7 @@ const socialLinks = [
   {
     name: 'Instagram',
     icon: Instagram,
-    href: 'https://instagram.com/eatek.in',
+    href: 'https://www.instagram.com/eatekofficial/',
     color: 'hover:text-pink-500',
   },
   {
@@ -170,24 +170,24 @@ const socialLinks = [
     href: 'https://linkedin.com/company/eatek',
     color: 'hover:text-blue-600',
   },
-  {
-    name: 'GitHub',
-    icon: Github,
-    href: 'https://github.com/eatek-org',
-    color: 'hover:text-gray-900 dark:hover:text-gray-100',
-  },
-  {
-    name: 'X (Twitter)',
-    icon: Twitter,
-    href: 'https://twitter.com/eatek_in',
-    color: 'hover:text-gray-900 dark:hover:text-gray-100',
-  },
-  {
-    name: 'YouTube',
-    icon: Youtube,
-    href: 'https://youtube.com/@eatek',
-    color: 'hover:text-red-600',
-  },
+  // {
+  //   name: 'GitHub',
+  //   icon: Github,
+  //   href: 'https://github.com/eatek-org',
+  //   color: 'hover:text-gray-900 dark:hover:text-gray-100',
+  // },
+  // {
+  //   name: 'X (Twitter)',
+  //   icon: Twitter,
+  //   href: 'https://twitter.com/eatek_in',
+  //   color: 'hover:text-gray-900 dark:hover:text-gray-100',
+  // },
+  // {
+  //   name: 'YouTube',
+  //   icon: Youtube,
+  //   href: 'https://youtube.com/@eatek',
+  //   color: 'hover:text-red-600',
+  // },
 ];
 
 const cultureSnippets = [
@@ -249,7 +249,7 @@ export function Footer() {
             {/* Contact Info Cards */}
             <div className="space-y-3">
               <motion.a
-                  href="mailto:connect@eatek.in"
+                  href="mailto:eatekofficial@gmail.com"
                 whileHover={{ x: 4 }}
                 className="group flex items-center space-x-3 p-3 rounded-lg bg-slate-900/50 border border-slate-800/50 hover:border-blue-500/50 hover:bg-slate-900/80 transition-all duration-300 no-underline"
               >
@@ -258,12 +258,12 @@ export function Footer() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-xs text-slate-500 mb-0.5">Email</div>
-                  <div className="text-sm text-slate-300 group-hover:text-white transition-colors break-all">connect@eatek.in</div>
+          <div className="text-sm text-slate-300 group-hover:text-white transition-colors break-all">eatekofficial@gmail.com</div>
               </div>
               </motion.a>
               
               <motion.a
-                  href="tel:+91XXXXXXXXXX"
+                  href="tel:+918838567933"
                 whileHover={{ x: 4 }}
                 className="group flex items-center space-x-3 p-3 rounded-lg bg-slate-900/50 border border-slate-800/50 hover:border-purple-500/50 hover:bg-slate-900/80 transition-all duration-300 no-underline"
               >
@@ -272,7 +272,7 @@ export function Footer() {
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-slate-500 mb-0.5">Phone</div>
-                  <div className="text-sm text-slate-300 group-hover:text-white transition-colors">+91-XXXXXXXXXX</div>
+                  <div className="text-sm text-slate-300 group-hover:text-white transition-colors">+91 8838567933</div>
                 </div>
               </motion.a>
               
@@ -282,7 +282,7 @@ export function Footer() {
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-slate-500 mb-0.5">Location</div>
-                  <div className="text-sm text-slate-300">Hybrid HQ: India</div>
+                  <div className="text-sm text-slate-300">Namakkal, Tamilnadu</div>
               </div>
               </div>
             </div>
@@ -329,9 +329,9 @@ export function Footer() {
         </div>
 
         {/* Newsletter + Community */}
-        <div className="mt-16 sm:mt-20 pt-12 border-t border-slate-800/50 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8">
+        {/* <div className="mt-16 sm:mt-20 pt-12 border-t border-slate-800/50 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8"> */}
           {/* Newsletter */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -366,10 +366,10 @@ export function Footer() {
                 <span>No spam, ever. Unsubscribe anytime.</span>
             </p>
           </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Community CTA */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -398,8 +398,8 @@ export function Footer() {
             </Button>
               </Link>
           </div>
-          </motion.div>
-        </div>
+          </motion.div> */}
+        {/* </div> */}
 
         {/* Social Links */}
         <motion.div
@@ -501,12 +501,12 @@ export function Footer() {
                 <span className="absolute left-0 bottom-0 h-px w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/legal:w-full transition-all duration-300" />
             </Link>
               <a
-                href="mailto:connect@eatek.in"
-                className="hover:text-white transition-colors no-underline relative group/legal"
-              >
-                Legal
-                <span className="absolute left-0 bottom-0 h-px w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/legal:w-full transition-all duration-300" />
-              </a>
+                  href="mailto:eatekofficial@gmail.com"
+                  className="hover:text-white transition-colors no-underline relative group/legal"
+                >
+                  Legal
+                  <span className="absolute left-0 bottom-0 h-px w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/legal:w-full transition-all duration-300" />
+                </a>
             </div>
           </div>
           <motion.div
@@ -518,12 +518,12 @@ export function Footer() {
           >
             <div className="text-xs text-slate-500 flex items-center justify-center gap-2 flex-wrap">
               <span>Built with</span>
-              <motion.span
+              {/* <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 2 }}
               >
                 <Heart className="h-3.5 w-3.5 text-red-500 fill-red-500" />
-              </motion.span>
+              </motion.span> */}
               <span>at the intersection of</span>
               <span className="font-medium bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Education, Art & Technology

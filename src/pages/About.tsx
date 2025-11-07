@@ -738,7 +738,7 @@ export default function About() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent mb-4">
-              Meet the Founders
+              Meet the Founder
             </h2>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
               The visionary behind EAtek's mission to bridge technology, creativity, and education
@@ -768,13 +768,14 @@ export default function About() {
                   window.location.href = '/contact';
                 }}
                 socials={{
-                  github: 'https://github.com',
-                  linkedin: 'https://linkedin.com',
-                  twitter: 'https://twitter.com',
-                  email: 'contact@eatek.ai',
+                  github: 'https://github.com/Elanchezhiyan2003',
+                  linkedin: 'https://www.linkedin.com/in/elanchezhiyanmahendiran',
+                  // twitter: 'https://twitter.com',
+                  email: 'emailto:chezhiyanmahi2020@gmail.com',
+                  instagram: 'https://www.instagram.com/chezhiyanmahendiran/',
                 }}
               />
-              <ProfileCard
+              {/* <ProfileCard
                 name="Asmiya Bincy"
                 title="Co-Founder & MD"
                 handle="elanchezhiyan"
@@ -792,7 +793,7 @@ export default function About() {
                   twitter: 'https://twitter.com',
                   email: 'contact@eatek.ai',
                 }}
-              />
+              /> */}
             </motion.div>
 
             {/* Founder Bio & Quote */}

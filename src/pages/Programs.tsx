@@ -22,13 +22,14 @@ import {
   Layers
 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useState } from 'react';
 
 const fellowshipPhases = [
   {
     icon: Zap,
     name: 'Ignition',
-    duration: '2 weeks',
+    // duration: '2 weeks',
+    duration: '2 Days',
     description: 'Spark curiosity with workshops & live sessions',
     details: 'Interactive workshops, tech talks, and hands-on sessions to ignite your passion for technology and creativity.',
     color: 'from-yellow-500 to-orange-500',
@@ -36,7 +37,7 @@ const fellowshipPhases = [
   {
     icon: Users,
     name: 'Cohort Circle',
-    duration: '4 weeks',
+    duration: '1 weeks',
     description: 'Build a peer-learning community',
     details: 'Form lasting connections with fellow learners, collaborate on projects, and create your support network.',
     color: 'from-blue-500 to-cyan-500',
@@ -138,6 +139,7 @@ const programs = [
       desc: "Gain hands-on exposure by working with EAtek’s live SaaS and creative products. Learn team dynamics, real-world delivery, and problem-solving beyond the classroom.",
       gradient: "from-[#0a0f1f]/90 to-[#141a2e]/90",
       glow: "hover:shadow-[0_0_20px_#40ffaa55]",
+      link: "#application-form",
     },
     {
       icon: <Layers className="w-10 h-10 text-[#4079ff]" />,
@@ -146,10 +148,85 @@ const programs = [
       desc: "A guided learning path where you work beside mentors, mastering workflows, codebases, and product logic while shaping your craft through mentorship and iteration.",
       gradient: "from-[#0a0f1f]/90 to-[#141a2e]/90",
       glow: "hover:shadow-[0_0_20px_#4079ff55]",
+      link: "#application-form",
     },
   ];
 
 export default function Programs() {
+  type ApplicationFormState = {
+    name: string;
+    email: string;
+    phone: string;
+    role: string;
+    program: string;
+    message: string;
+  };
+
+  const initialFormState: ApplicationFormState = {
+    name: "",
+    email: "",
+    phone: "",
+    role: "Student",
+    program: programs[0]?.title ?? "Internship Curve",
+    message: "",
+  };
+
+  const [formData, setFormData] = useState<ApplicationFormState>(initialFormState);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState<"success" | "error" | null>(null);
+
+  const handleChange = (field: keyof ApplicationFormState) => (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
+  ) => {
+    setFormData((prev) => ({ ...prev, [field]: event.target.value }));
+    setFeedback(null);
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (!formData.name.trim() || !formData.email.trim()) {
+      setFeedback("error");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "1be551b0-0d7b-4764-9808-f76612002733",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          role: formData.role,
+          program: formData.program,
+          message: formData.message,
+          subject: `New Application: ${formData.program}`,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setFeedback("success");
+        setFormData(initialFormState);
+      } else {
+        setFeedback("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setFeedback("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -205,7 +282,7 @@ export default function Programs() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="mt-12 flex items-center justify-center gap-4 flex-wrap"
             >
-              <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
+              {/* <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
                 <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-6 text-base font-semibold rounded-xl">
                 Apply for Fellowship
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -215,7 +292,7 @@ export default function Programs() {
                 <Button variant="outline" size="lg" className="border-2 border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all duration-300 px-8 py-6 text-base font-semibold rounded-xl bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                 Learn More
               </Button>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
 
             <motion.div
@@ -280,8 +357,9 @@ export default function Programs() {
             <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-800/50 rounded-2xl p-8 shadow-lg">
                 <div className="text-center mb-8">
                 <div className="inline-flex items-center rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-3 text-white font-semibold shadow-lg">
-                    <Calendar className="mr-2 h-5 w-5" />
-                    20-Week Transformative Journey
+                    {/* <Calendar className="mr-2 h-5 w-5" /> */}
+                    {/* 20-Week Transformative Journey */}
+                    Transformative Journey
                   </div>
                 </div>
               <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed text-center">
@@ -344,71 +422,212 @@ export default function Programs() {
 
 
       {/* {Internship & Apprenticeship Programs */}
-       <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-950">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]" />
-        
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: -30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="inline-block"
+      <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-950">
+  <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]" />
+  
+  <div className="max-w-6xl mx-auto relative z-10">
+    <div className="text-center mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="inline-block"
+      >
+        <span className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+          Opportunities
+        </span>
+      </motion.div>
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-50 dark:via-slate-200 dark:to-slate-50 bg-clip-text text-transparent"
+      >
+        Internship & Apprenticeship
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"
+      >
+        Bridging theory and practice through immersive, hands-on experiences — where curiosity meets real-world creation.
+      </motion.p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-8">
+      {programs.map((p, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: i * 0.1 }}
+          whileHover={{ y: -8 }}
+          className="relative h-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-800/50 rounded-2xl p-8 hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden group"
+        >
+          {/* Gradient accent */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-purple-600" />
+
+          <div className="relative z-10 flex flex-col justify-between h-full">
+            <div>
+              <div className="mb-6">{React.cloneElement(p.icon, { className: "h-10 w-10" })}</div>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-50 mb-2">
+                {p.title}
+              </h3>
+              <h4 className="text-blue-600 dark:text-blue-400 font-semibold mb-4">
+                {p.subtitle}
+              </h4>
+              <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">{p.desc}</p>
+            </div>
+
+            {/* Apply Now Button */}
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href={p.link}
+              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 shadow-md hover:shadow-lg transition-all duration-300"
             >
-              <span className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-                Opportunities
-              </span>
-            </motion.div>
-            <motion.h2
-              initial={{ opacity: 0, y: -30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-50 dark:via-slate-200 dark:to-slate-50 bg-clip-text text-transparent"
+              Apply Now
+            </motion.a>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+
+    {/* Application Form */}
+    <motion.div
+      id="application-form"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="mt-16 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-start"
+    >
+      <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-800/50 rounded-3xl p-10 shadow-xl">
+        <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
+          Application Form
+        </h3>
+        <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+          Tell us about yourself and the opportunity you’re excited about. Our team will review
+          your application and get in touch with the next steps.
+        </p>
+
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="grid gap-6 md:grid-cols-2">
+            <label className="flex flex-col gap-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+              Full Name
+              <input
+                type="text"
+                value={formData.name}
+                onChange={handleChange("name")}
+                placeholder="Enter your name"
+                className="rounded-xl border border-slate-200/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-950/50 px-4 py-3 text-base text-slate-900 dark:text-slate-100 shadow-inner focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition"
+                required
+              />
+            </label>
+            <label className="flex flex-col gap-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+              Email
+              <input
+                type="email"
+                value={formData.email}
+                onChange={handleChange("email")}
+                placeholder="name@example.com"
+                className="rounded-xl border border-slate-200/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-950/50 px-4 py-3 text-base text-slate-900 dark:text-slate-100 shadow-inner focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition"
+                required
+              />
+            </label>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <label className="flex flex-col gap-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+              Phone / WhatsApp
+              <input
+                type="tel"
+                value={formData.phone}
+                onChange={handleChange("phone")}
+                placeholder="Optional"
+                className="rounded-xl border border-slate-200/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-950/50 px-4 py-3 text-base text-slate-900 dark:text-slate-100 shadow-inner focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition"
+              />
+            </label>
+            <label className="flex flex-col gap-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+              Current Role
+              <select
+                value={formData.role}
+                onChange={handleChange("role")}
+                className="rounded-xl border border-slate-200/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-950/50 px-4 py-3 text-base text-slate-900 dark:text-slate-100 shadow-inner focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition"
+              >
+                {['Student', 'Recent Graduate', 'Working Professional', 'Other'].map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+
+          <label className="flex flex-col gap-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+            Opportunity of Interest
+            <select
+              value={formData.program}
+              onChange={handleChange("program")}
+              className="rounded-xl border border-slate-200/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-950/50 px-4 py-3 text-base text-slate-900 dark:text-slate-100 shadow-inner focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition"
             >
-          Internship & Apprenticeship
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"
+              {programs.map((program) => (
+                <option key={program.title} value={program.title}>
+                  {program.title}
+                </option>
+              ))}
+              <option value="Mentorship">Mentorship</option>
+              <option value="Bootcamp">Bootcamp</option>
+            </select>
+          </label>
+
+          <label className="flex flex-col gap-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+            Tell us about your goals
+            <textarea
+              value={formData.message}
+              onChange={handleChange("message")}
+              rows={4}
+              placeholder="Share your interests, past experience, or what you want to build."
+              className="rounded-xl border border-slate-200/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-950/50 px-4 py-3 text-base text-slate-900 dark:text-slate-100 shadow-inner focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition resize-none"
+            />
+          </label>
+
+          {feedback === 'error' && (
+            <p className="text-sm font-medium text-red-500">
+              Please provide your name and a valid email so we can reach out to you.
+            </p>
+          )}
+          {feedback === 'success' && (
+            <p className="text-sm font-medium text-green-500">
+              Thanks for applying! Our team will reach out soon.
+            </p>
+          )}
+
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
             >
-          Bridging theory and practice through immersive, hands-on experiences — where curiosity meets real-world creation.
-            </motion.p>
+              {isSubmitting ? 'Submitting...' : 'Submit Application'}
+            </Button>
+            <span className="text-xs text-slate-500 dark:text-slate-400">
+              By submitting, you agree to be contacted by the EAtek team.
+            </span>
+          </div>
+        </form>
       </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-        {programs.map((p, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                whileHover={{ y: -8 }}
-                className="relative h-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-800/50 rounded-2xl p-8 hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden group"
-              >
-                {/* Gradient accent */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-purple-600" />
-                
-                <div className="relative z-10">
-                  <div className="mb-6">{React.cloneElement(p.icon, { className: "h-10 w-10" })}</div>
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-50 mb-2">
-              {p.title}
-            </h3>
-                  <h4 className="text-blue-600 dark:text-blue-400 font-semibold mb-4">
-              {p.subtitle}
-            </h4>
-                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{p.desc}</p>
-                </div>
-          </motion.div>
-        ))}
-          </div>
-      </div>
-    </section>
+      
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Bootcamps & Workshops */}
       <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950">
@@ -491,8 +710,9 @@ export default function Programs() {
                     </div>
 
                       <Button variant="outline" className="w-full rounded-lg">
-                      Register Now
-                      <ArrowRight className="ml-2 h-3 w-3" />
+                      {/* Register Now */}
+                      Coming Soon
+                      {/* <ArrowRight className="ml-2 h-3 w-3" /> */}
                     </Button>
                     </div>
                   </div>
@@ -505,10 +725,10 @@ export default function Programs() {
             <p className="text-sm font-medium text-muted-foreground mb-4">
               👉 Each bootcamp is practical, short, and impact-driven.
             </p>
-            <Button variant="outline" size="lg">
+            {/* <Button variant="outline" size="lg">
               View All Workshops
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
@@ -727,6 +947,12 @@ export default function Programs() {
                 <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
                 <Button 
                   size="lg" 
+                  onClick={() => {
+                    // prefill form for fellowship and scroll to application
+                    setFormData((prev) => ({ ...prev, program: "Internship Curve" }));
+                    const el = document.getElementById('application-form');
+                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }}
                     className="bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl"
                 >
                   <GraduationCap className="mr-2 h-5 w-5" />
@@ -734,15 +960,38 @@ export default function Programs() {
                 </Button>
                 </motion.div>
                 
-                <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
-                <Button 
-                  variant="outline" 
-                  size="lg"
+                <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }} className="flex gap-4 items-center justify-center">
+                  {/* <Button 
+                    variant="outline" 
+                    size="lg"
+                    onClick={() => {
+                      // prefill form for bootcamp, scroll to application and open WhatsApp for quick chat
+                      setFormData((prev) => ({ ...prev, program: "Bootcamp" }));
+                      const el = document.getElementById('application-form');
+                      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      const phone = '8838567933';
+                      const message = encodeURIComponent("Hi, I'm interested in joining a Bootcamp at EAtek. Could you share next steps?");
+                      window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
+                    }}
+                      className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-6 text-lg backdrop-blur-sm rounded-xl bg-white/5"
+                  >
+                    Join a Bootcamp
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button> */}
+
+                  {/* New: Join WhatsApp Group button */}
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={() => {
+                      // open the EAtek WhatsApp group invite in a new tab
+                      window.open('https://chat.whatsapp.com/BwCXJZ1njJoAcId2oaaP4T', '_blank');
+                    }}
                     className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-6 text-lg backdrop-blur-sm rounded-xl bg-white/5"
-                >
-                  Join a Bootcamp
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                  >
+                    Join a Bootcamp
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
                 </motion.div>
               </motion.div>
               

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface ProfileCardProps {
@@ -19,6 +19,7 @@ interface ProfileCardProps {
     linkedin?: string;
     twitter?: string;
     email?: string;
+    instagram?: string;
   };
 }
 
@@ -73,7 +74,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
 
       {/* Socials */}
       <div className="flex justify-center gap-4 mt-6">
-        {socials?.github && (
+        {/* {socials?.github && (
           <a
             href={socials.github}
             target="_blank"
@@ -82,7 +83,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
           >
             <Github className="w-5 h-5" />
           </a>
-        )}
+        )} */}
         {socials?.linkedin && (
           <a
             href={socials.linkedin}
@@ -109,6 +110,16 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             className="p-2 rounded-full bg-slate-300 hover:bg-slate-700 transition"
           >
             <Mail className="w-5 h-5" />
+          </a>
+        )}
+        {socials?.instagram && (
+          <a
+            href={socials.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-slate-300 hover:bg-slate-700 transition"
+          >
+            <Instagram className="w-5 h-5" />
           </a>
         )}
       </div>

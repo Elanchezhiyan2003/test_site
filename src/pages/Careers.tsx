@@ -256,7 +256,7 @@ export default function Careers() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="mt-12 flex items-center justify-center gap-4 flex-wrap"
             >
-              <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
+              {/* <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
                 <Button size="lg" className="bg-gradient-to-r from-orange-600 to-purple-600 hover:from-orange-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-6 text-base font-semibold rounded-xl">
                 View Open Roles
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -266,7 +266,7 @@ export default function Careers() {
                 <Button variant="outline" size="lg" className="border-2 border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all duration-300 px-8 py-6 text-base font-semibold rounded-xl bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                 Learn About Culture
               </Button>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
 
             <motion.div
@@ -782,6 +782,11 @@ export default function Careers() {
                 <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
                   <Button 
                     size="lg" 
+                    onClick={() => {
+                      const subject = encodeURIComponent("Application: I'm interested in joining EAtek");
+                      const body = encodeURIComponent("Hi EAtek team,%0D%0A%0D%0AI'd like to apply for roles at EAtek. Please find my resume attached when you reply for next steps.%0D%0A%0D%0AThanks,");
+                      window.location.href = `mailto:careers@eatek.in?subject=${subject}&body=${body}`;
+                    }}
                     className="bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl"
                   >
                     <Mail className="mr-2 h-5 w-5" />
@@ -793,6 +798,11 @@ export default function Careers() {
                   <Button 
                     variant="outline" 
                     size="lg"
+                    onClick={() => {
+                      const phone = '8838567933';
+                      const message = encodeURIComponent("Hi, I have a question about careers at EAtek. Could you please help?");
+                      window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
+                    }}
                     className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-6 text-lg backdrop-blur-sm rounded-xl bg-white/5"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />

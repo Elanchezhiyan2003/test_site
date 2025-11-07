@@ -175,6 +175,7 @@ export function CTABanner() {
                 <Button 
                   size="lg" 
                   className="bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl"
+                  onClick={() => { window.location.href = '/Programs'; }}
                 >
                   Start Your Journey
                   <motion.span
@@ -190,7 +191,7 @@ export function CTABanner() {
                 </Button>
               </motion.div>
               
-              <motion.div
+              {/* <motion.div
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -201,7 +202,7 @@ export function CTABanner() {
                 >
                   Schedule a Call
                 </Button>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
             
             <motion.div
