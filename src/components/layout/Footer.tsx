@@ -103,6 +103,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import EATek from '../../../public/EATek.png'
 import {
   Instagram,
   Linkedin,
@@ -228,9 +229,10 @@ export function Footer() {
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className="relative h-12 w-12 rounded-xl bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center transition-transform duration-300 shadow-lg shadow-blue-600/25"
+                // className="relative h-12 w-12 rounded-xl bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center transition-transform duration-300 shadow-lg shadow-blue-600/25"
               >
-                <span className="text-white font-bold text-xl">E</span>
+                {/* <span className="text-white font-bold text-xl">E</span> */}
+               <img src={EATek} alt="EAtek Logo"  className="object-contain relative h-14 w-14 rounded-sm" />
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-600/0 via-purple-600/0 to-pink-600/0 group-hover:from-blue-600/20 group-hover:via-purple-600/20 group-hover:to-pink-600/20 transition-all duration-300" />
               </motion.div>
               <div>
