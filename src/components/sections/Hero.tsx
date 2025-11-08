@@ -102,7 +102,7 @@ export function Hero() {
       {/* 🧭 Content Wrapper */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 flex items-center justify-center">
         <motion.div
-          className="w-full flex flex-col items-center justify-center text-center py-16 sm:py-20 md:py-24 lg:py-28"
+          className="w-full flex flex-col items-center justify-center text-center py-8 sm:py-12 md:py-16 lg:py-20"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -112,7 +112,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 mb-6 sm:mb-8 rounded-full bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50"
+            className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 rounded-full bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
@@ -148,7 +148,7 @@ export function Hero() {
 
           {/* 🪶 Description */}
           <motion.p
-            className="mx-auto mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed px-4 sm:px-6"
+            className="mx-auto mt-3 sm:mt-4 md:mt-5 max-w-2xl text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed px-4 sm:px-6"
             variants={prefersReducedMotion ? undefined : itemVariants}
           >
             Bridging Education, Art, Technology, and Emotion to create
@@ -159,7 +159,7 @@ export function Hero() {
 
           {/* 🎯 Action Buttons */}
           <motion.div
-            className="mt-8 sm:mt-10 md:mt-12 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-3 sm:gap-4 w-full px-4"
+            className="mt-6 sm:mt-8 md:mt-10 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-3 sm:gap-4 w-full px-4"
             variants={prefersReducedMotion ? undefined : itemVariants}
           >
             <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">

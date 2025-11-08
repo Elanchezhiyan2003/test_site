@@ -38,7 +38,7 @@ export function Layout() {
       <AnimatePresence mode="wait">
         <motion.main
           key={location.pathname}
-          className="flex-1 pt-16"
+          className="flex-1"
           variants={pageVariants}
           initial="initial"
           animate="animate"
