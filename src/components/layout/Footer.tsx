@@ -233,7 +233,7 @@ export function Footer() {
               >
                 {/* <span className="text-white font-bold text-xl">E</span> */}
                <img src={EATek} alt="EAtek Logo"  className="object-contain relative h-14 w-14 rounded-sm" />
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-600/0 via-purple-600/0 to-pink-600/0 group-hover:from-blue-600/20 group-hover:via-purple-600/20 group-hover:to-pink-600/20 transition-all duration-300" />
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-600/0 via-purple-600/0 to-pink-600/0  transition-all duration-300" />
               </motion.div>
               <div>
                 <div className="text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:via-purple-400 group-hover:to-pink-400 transition-all duration-300">
