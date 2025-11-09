@@ -228,7 +228,7 @@ export default function Programs() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="">
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-slate-50 via-white to-blue-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-blue-950/20">
         {/* Modern background grid */}
@@ -240,7 +240,7 @@ export default function Programs() {
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         </div>
 
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full py-12 md:py-2 relative z-10">
           <div className="relative py-24 sm:py-32 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
