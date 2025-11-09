@@ -186,12 +186,12 @@ export default function Contact() {
 
         {/* Animated gradient orbs */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-30 -right-40 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute -bottom-30 -left-40 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full relative z-10">
-          <div className="relative py-20 sm:py-26 text-center">
+          <div className="relative py-8 sm:py-26 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
