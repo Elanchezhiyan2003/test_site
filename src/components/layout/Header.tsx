@@ -185,13 +185,13 @@ export function Header() {
                   </motion.div>
                 ))}
                 <motion.div
-                  className="pt-4 space-y-2"
+                  className="pt-14 space-y-2"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: navigation.length * 0.1 }}
                 >
                   <Link to="/services" onClick={() => setIsOpen(false)}>
-                    <Button variant="outline" className="w-full border-slate-300 dark:border-slate-700">
+                    <Button variant="outline" className="w-full mb-4  border-slate-300 dark:border-slate-700">
                       Get Started
                     </Button>
                   </Link>

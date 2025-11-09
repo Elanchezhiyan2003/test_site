@@ -33,7 +33,7 @@ const contactMethods = [
     title: 'Email',
     value: 'info@eatek.in',
     description: 'Drop us a line anytime',
-    action: 'mailto:connect@eatek.in',
+    action: 'mailto:info@eatek.in',
     color: 'from-blue-500 to-cyan-500',
   },
   {
