@@ -13,11 +13,11 @@
 // ];
 
 // const socialLinks = [
-//   { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/eatek.in', color: 'hover:text-pink-500' },
-//   { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/company/eatek', color: 'hover:text-blue-600' },
-//   { name: 'GitHub', icon: Github, href: 'https://github.com/eatek-org', color: 'hover:text-gray-900 dark:hover:text-gray-100' },
-//   { name: 'X (Twitter)', icon: Twitter, href: 'https://twitter.com/eatek_in', color: 'hover:text-gray-900 dark:hover:text-gray-100' },
-//   { name: 'YouTube', icon: Youtube, href: 'https://youtube.com/@eatek', color: 'hover:text-red-600' },
+//   { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/EATek.in', color: 'hover:text-pink-500' },
+//   { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/company/EATek', color: 'hover:text-blue-600' },
+//   { name: 'GitHub', icon: Github, href: 'https://github.com/EATek-org', color: 'hover:text-gray-900 dark:hover:text-gray-100' },
+//   { name: 'X (Twitter)', icon: Twitter, href: 'https://twitter.com/EATek_in', color: 'hover:text-gray-900 dark:hover:text-gray-100' },
+//   { name: 'YouTube', icon: Youtube, href: 'https://youtube.com/@EATek', color: 'hover:text-red-600' },
 // ];
 
 // const cultureSnippets = [
@@ -39,13 +39,13 @@
 //                 <span className="text-white font-bold text-lg">E</span>
 //               </div>
 //               <div>
-//                 <div className="text-xl font-bold">EAtek</div>
+//                 <div className="text-xl font-bold">EATek</div>
 //                 <div className="text-sm text-gray-400">Beyond the Binary</div>
 //               </div>
 //             </Link>
 //             <p className="text-gray-300 leading-relaxed mb-6">A creative-tech company blending Education, Art, Technology, and Emotion into soulful solutions. We build technology that goes beyond the binary to create meaningful impact.</p>
 //             <div className="space-y-3 text-sm text-slate-400">
-//               <div className="flex items-center space-x-3"><Mail className="h-4 w-4" /><a href="mailto:connect@eatek.in" className="hover:text-white transition-colors">connect@eatek.in</a></div>
+//               <div className="flex items-center space-x-3"><Mail className="h-4 w-4" /><a href="mailto:connect@EATek.in" className="hover:text-white transition-colors">connect@EATek.in</a></div>
 //               <div className="flex items-center space-x-3"><Phone className="h-4 w-4" /><a href="tel:+91XXXXXXXXXX" className="hover:text-white transition-colors">+91-XXXXXXXXXX</a></div>
 //               <div className="flex items-center space-x-3"><MapPin className="h-4 w-4" /><span>Hybrid HQ: India</span></div>
 //             </div>
@@ -65,7 +65,7 @@
 //         </div>
 //         <div className="mt-16 pt-12 border-t border-gray-800 grid grid-cols-1 lg:grid-cols-2 gap-12">
 //           <div>
-//             <h3 className="text-lg font-semibold text-white mb-3">Stay ahead with EAtek insights, stories, and launches.</h3>
+//             <h3 className="text-lg font-semibold text-white mb-3">Stay ahead with EATek insights, stories, and launches.</h3>
 //             <div className="flex gap-3 mb-2">
 //               <Input type="email" placeholder="your.email@example.com" className="flex-1 bg-gray-800 border-gray-700 text-white placeholder:text-gray-400" />
 //               <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">Subscribe <ArrowRight className="ml-2 h-4 w-4" /></Button>
@@ -89,7 +89,7 @@
 //       </div>
 //       <div className="bg-black py-6">
 //         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-400">
-//           <div className="mb-4 sm:mb-0">© 2025 EAtek. All rights reserved.</div>
+//           <div className="mb-4 sm:mb-0">© 2025 EATek. All rights reserved.</div>
 //           <div className="flex items-center space-x-6">
 //             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
 //             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
@@ -162,31 +162,31 @@ const socialLinks = [
   {
     name: 'Instagram',
     icon: Instagram,
-    href: 'https://www.instagram.com/eatekofficial/',
+    href: 'https://www.instagram.com/EATekofficial/',
     color: 'hover:text-pink-500',
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    href: 'https://linkedin.com/company/eatek',
+    href: 'https://linkedin.com/company/EATek',
     color: 'hover:text-blue-600',
   },
   // {
   //   name: 'GitHub',
   //   icon: Github,
-  //   href: 'https://github.com/eatek-org',
+  //   href: 'https://github.com/EATek-org',
   //   color: 'hover:text-gray-900 dark:hover:text-gray-100',
   // },
   // {
   //   name: 'X (Twitter)',
   //   icon: Twitter,
-  //   href: 'https://twitter.com/eatek_in',
+  //   href: 'https://twitter.com/EATek_in',
   //   color: 'hover:text-gray-900 dark:hover:text-gray-100',
   // },
   // {
   //   name: 'YouTube',
   //   icon: Youtube,
-  //   href: 'https://youtube.com/@eatek',
+  //   href: 'https://youtube.com/@EATek',
   //   color: 'hover:text-red-600',
   // },
 ];
@@ -232,12 +232,12 @@ export function Footer() {
                 // className="relative h-12 w-12 rounded-xl bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center transition-transform duration-300 shadow-lg shadow-blue-600/25"
               >
                 {/* <span className="text-white font-bold text-xl">E</span> */}
-               <img src={EATek} alt="EAtek Logo"  className="object-contain relative h-14 w-14 rounded-sm" />
+               <img src={EATek} alt="EATek Logo"  className="object-contain relative h-14 w-14 rounded-sm" />
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-600/0 via-purple-600/0 to-pink-600/0  transition-all duration-300" />
               </motion.div>
               <div>
                 <div className="text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:via-purple-400 group-hover:to-pink-400 transition-all duration-300">
-                  EAtek
+                  EATek
                 </div>
                 <div className="text-sm text-slate-400 font-medium">Beyond the Binary</div>
               </div>
@@ -251,7 +251,7 @@ export function Footer() {
             {/* Contact Info Cards */}
             <div className="space-y-3">
               <motion.a
-                  href="mailto:info@eatek.in"
+                  href="mailto:info@EATek.in"
                 whileHover={{ x: 4 }}
                 className="group flex items-center space-x-3 p-3 rounded-lg bg-slate-900/50 border border-slate-800/50 hover:border-blue-500/50 hover:bg-slate-900/80 transition-all duration-300 no-underline"
               >
@@ -260,7 +260,7 @@ export function Footer() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-xs text-slate-500 mb-0.5">Email</div>
-          <div className="text-sm text-slate-300 group-hover:text-white transition-colors break-all">info@eatek.in</div>
+          <div className="text-sm text-slate-300 group-hover:text-white transition-colors break-all">info@EATek.in</div>
               </div>
               </motion.a>
               
@@ -351,7 +351,7 @@ export function Footer() {
                 </h3>
               </div>
               <p className="text-slate-400 mb-6 text-sm sm:text-base">
-              Stay ahead with EAtek insights, stories, and launches.
+              Stay ahead with EATek insights, stories, and launches.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 mb-3">
               <Input
@@ -483,7 +483,7 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between text-sm text-slate-400 gap-6 sm:gap-0">
             <div className="text-center sm:text-left">
               <span className="font-medium text-slate-300">
-                © {new Date().getFullYear()} EAtek.
+                © {new Date().getFullYear()} EATek.
               </span>
               <span className="ml-1">All rights reserved.</span>
             </div>
@@ -503,7 +503,7 @@ export function Footer() {
                 <span className="absolute left-0 bottom-0 h-px w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover/legal:w-full transition-all duration-300" />
             </Link>
               <a
-                  href="mailto:eatekofficial@gmail.com"
+                  href="mailto:EATekofficial@gmail.com"
                   className="hover:text-white transition-colors no-underline relative group/legal"
                 >
                   Legal

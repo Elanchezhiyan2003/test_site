@@ -17,7 +17,7 @@ const testimonials = [
     role: 'Startup Founder',
     company: 'CEO at InnovateLab',
     image: '/api/placeholder/40/40',
-    content: 'EAtek\'s approach to bridging education and technology is revolutionary. Their programs don\'t just teach skills - they inspire innovation.',
+    content: 'EATek\'s approach to bridging education and technology is revolutionary. Their programs don\'t just teach skills - they inspire innovation.',
     rating: 5,
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
     role: 'Design Student',
     company: 'BuildVerse Participant',
     image: '/api/placeholder/40/40',
-    content: 'The hands-on experience and mentorship I received helped me land my dream internship. EAtek truly cares about student success.',
+    content: 'The hands-on experience and mentorship I received helped me land my dream internship. EATek truly cares about student success.',
     rating: 5,
   },
 ];
@@ -70,10 +70,10 @@ export function CommunityImpact() {
         </div> */}
 
         {/* Testimonials */}
-      {/* <TestimonialsSection title="Community Testimonials" description="What our participants and partners say about EAtek" testimonials={testimonials.map(t => ({ author: { name: t.name, role: t.role, company: t.company, image: t.image }, text: t.content }))}> */}
+      {/* <TestimonialsSection title="Community Testimonials" description="What our participants and partners say about EATek" testimonials={testimonials.map(t => ({ author: { name: t.name, role: t.role, company: t.company, image: t.image }, text: t.content }))}> */}
 <TestimonialsSection
   title="Community Testimonials"
-  description="What our participants and partners say about EAtek"
+  description="What our participants and partners say about EATek"
   testimonials={testimonials.map(t => ({
     author: {
       name: t.name,

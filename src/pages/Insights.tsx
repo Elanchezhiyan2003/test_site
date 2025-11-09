@@ -141,7 +141,7 @@ const whitepapers = [
 
 const newsUpdates = [
   {
-    title: 'EAtek Launches ELAN 20\' BuildVerse Fellowship',
+    title: 'EATek Launches ELAN 20\' BuildVerse Fellowship',
     summary: 'New 20-week program designed to bridge the gap between learning and real-world building for students.',
     date: '2024-12-01',
     type: 'Program Launch',
@@ -159,7 +159,7 @@ const newsUpdates = [
     type: 'Product Update',
   },
   {
-    title: 'EAtek Contributes to React Open Source',
+    title: 'EATek Contributes to React Open Source',
     summary: 'Our team contributes significant improvements to React ecosystem, benefiting millions of developers.',
     date: '2024-11-15',
     type: 'Community',
@@ -203,7 +203,7 @@ export default function Insights() {
 
             <div className="mt-8 text-center">
               <p className="text-sm font-medium text-muted-foreground">
-                👉 Insights isn't just content — it's the evolving voice of EAtek.
+                👉 Insights isn't just content — it's the evolving voice of EATek.
               </p>
             </div>
           </div>
@@ -295,7 +295,7 @@ export default function Insights() {
               Case Studies
             </h2>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              Real-world stories of how EAtek solutions empower education, commerce, and communities. 
+              Real-world stories of how EATek solutions empower education, commerce, and communities. 
               From fellowship projects to SaaS deployments — every success becomes a shared blueprint.
             </p>
           </div>
@@ -357,7 +357,7 @@ export default function Insights() {
             </h2>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
               In-depth explorations of emerging technologies, creative commerce, and educational innovation. 
-              EAtek research is where academic depth meets practical application.
+              EATek research is where academic depth meets practical application.
             </p>
           </div>
 

@@ -27,7 +27,7 @@ export default function WhoWeAre() {
           Who We Are
         </h2>
         <p className="text-slate-900 text-lg md:text-xl leading-relaxed mb-12">
-          At <span className="text-[#40ffaa] font-semibold">EAtek</span>, we’re not just a team — we’re a collective of dreamers, builders, and creators shaping soulful digital ecosystems. Our culture thrives on curiosity, empathy, and the pursuit of meaningful innovation.
+          At <span className="text-[#40ffaa] font-semibold">EATek</span>, we’re not just a team — we’re a collective of dreamers, builders, and creators shaping soulful digital ecosystems. Our culture thrives on curiosity, empathy, and the pursuit of meaningful innovation.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

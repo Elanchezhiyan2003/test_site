@@ -80,7 +80,7 @@ export function Header() {
               >
                 <img
                   src={EATek}
-                  alt="EAtek Logo"
+                  alt="EATek Logo"
                   className="h-full w-auto object-contain"
                 />
               </motion.div>

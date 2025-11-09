@@ -25,7 +25,7 @@ const communityFeatures = [
   {
     icon: Users,
     title: 'Fellowship Network',
-    intro: 'Every EAtek fellow joins a thriving peer-to-peer ecosystem that grows beyond the program.',
+    intro: 'Every EATek fellow joins a thriving peer-to-peer ecosystem that grows beyond the program.',
     why: 'True learning happens in communities, not in isolation.',
     positioning: 'A lifelong network of learners, builders, and creators who support each other.',
     features: ['Peer-to-peer learning', 'Alumni network', 'Collaborative projects', 'Lifetime access'],
@@ -43,7 +43,7 @@ const communityFeatures = [
   {
     icon: GitBranch,
     title: 'Open Source First',
-    intro: 'EAtek actively contributes to open source and encourages fellows to build in public.',
+    intro: 'EATek actively contributes to open source and encourages fellows to build in public.',
     why: 'Collaboration accelerates innovation and keeps knowledge accessible.',
     positioning: 'We don\'t just consume tech — we give back to the ecosystem.',
     features: ['Open source projects', 'Public building', 'Knowledge sharing', 'Community contributions'],
@@ -83,7 +83,7 @@ const impactStories = [
     icon: Code,
     title: 'Open Source Contributors',
     name: 'Dev Community',
-    story: 'EAtek fellows have contributed to 100+ open source projects, impacting millions of developers.',
+    story: 'EATek fellows have contributed to 100+ open source projects, impacting millions of developers.',
     achievement: '100+ OSS contributions',
     category: 'Technology',
     image: '/api/placeholder/60/60',
@@ -99,7 +99,7 @@ const communityStats = [
 
 const openSourceProjects = [
   {
-    name: 'EAtek UI Kit',
+    name: 'EATek UI Kit',
     description: 'React component library used by 1000+ developers',
     stars: '2.3k',
     language: 'TypeScript',
@@ -139,7 +139,7 @@ export default function Community() {
             
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
               Join a vibrant ecosystem of learners, creators, and innovators who support each other's growth. 
-              At EAtek, community isn't just a network — it's the foundation of transformation.
+              At EATek, community isn't just a network — it's the foundation of transformation.
             </p>
             
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -332,7 +332,7 @@ export default function Community() {
                         </div>
                         <div>
                           <div className="font-semibold text-sm">{story.name}</div>
-                          <div className="text-xs text-muted-foreground">EAtek Fellow</div>
+                          <div className="text-xs text-muted-foreground">EATek Fellow</div>
                         </div>
                       </div>
                       

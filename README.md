@@ -1,6 +1,6 @@
-# EAtek - Beyond The Binary
+# EATek - Beyond The Binary
 
-Official website for EAtek - Education, Art, Technology, and Emotion Kinetics.
+Official website for EATek - Education, Art, Technology, and Emotion Kinetics.
 
 Building soulful technology that bridges innovation and human connection.
 

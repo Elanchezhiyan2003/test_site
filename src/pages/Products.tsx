@@ -354,7 +354,7 @@ export default function Products() {
               </h2>
 
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-blue-100">
-                Join thousands of creators, businesses, and innovators who are building beyond the binary with EAtek's SaaS solutions.
+                Join thousands of creators, businesses, and innovators who are building beyond the binary with EATek's SaaS solutions.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

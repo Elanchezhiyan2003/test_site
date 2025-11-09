@@ -87,7 +87,7 @@ const detailedServices = [
     title: 'Web & App Development',
     intro: 'We design and build modern websites and applications — from landing pages to enterprise platforms — using React, Next.js, and scalable stacks.',
     why: 'Businesses need digital solutions that are fast, secure, and adaptable.',
-    positioning: 'EAtek delivers experiences that don\'t just work — they inspire and last.',
+    positioning: 'EATek delivers experiences that don\'t just work — they inspire and last.',
     features: ['React & Next.js', 'Enterprise Platforms', 'Mobile-First Design', 'Performance Optimized'],
     color: 'from-blue-500 to-cyan-500',
   },
@@ -114,7 +114,7 @@ const detailedServices = [
     title: 'Automation & AI Integration',
     intro: 'Integrating AI to make workflows smarter, faster, and human-centric.',
     why: 'Time is valuable. Automation frees people to focus on what matters.',
-    positioning: 'EAtek builds automations that power education, commerce, and enterprise ecosystems.',
+    positioning: 'EATek builds automations that power education, commerce, and enterprise ecosystems.',
     features: ['AI Integration', 'Workflow Automation', 'Smart Systems', 'Human-Centric AI'],
     color: 'from-orange-500 to-red-500',
   },
@@ -183,11 +183,11 @@ const services = [
     {
       icon: <GraduationCap className="w-10 h-10 text-[#40ffaa]" />,
       title: "Learning & Fellowship Programs",
-      desc: "Through ELAN20' and EAtek Learning Labs, we merge technology, creativity, and mentorship into real-world learning.",
+      desc: "Through ELAN20' and EATek Learning Labs, we merge technology, creativity, and mentorship into real-world learning.",
     },
     {
       icon: <Beaker className="w-10 h-10 text-[#4079ff]" />,
-      title: "R&D Innovation (EAtek Labs)",
+      title: "R&D Innovation (EATek Labs)",
       desc: "A sandbox for experimentation — developing emerging tech solutions in AI, AR, and system-level design.",
     },
     {
@@ -564,7 +564,7 @@ export default function Services() {
       ))}
     </main> */}
 
-      {/* Why Choose EAtek */}
+      {/* Why Choose EATek */}
       <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-950">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]" />
         
@@ -578,7 +578,7 @@ export default function Services() {
                 transition={{ duration: 0.6 }}
                 className="text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-50 dark:via-slate-200 dark:to-slate-50 bg-clip-text text-transparent"
               >
-                    Why Choose EAtek?
+                    Why Choose EATek?
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -650,7 +650,7 @@ export default function Services() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
               >
-                Hire EAtek for Your Project
+                Hire EATek for Your Project
               </motion.h2>
               
               <motion.p
@@ -676,7 +676,7 @@ export default function Services() {
                   size="lg" 
                   onClick={() => {
                     const phone = '8838567933';
-                    const message = encodeURIComponent("Hi, I'm interested in starting a project with EAtek. Could we discuss next steps?");
+                    const message = encodeURIComponent("Hi, I'm interested in starting a project with EATek. Could we discuss next steps?");
                     window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
                   }}
                     className="bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl"
@@ -692,7 +692,7 @@ export default function Services() {
                   size="lg"
                   onClick={() => {
                     const phone = '8838567933';
-                    const message = encodeURIComponent("Hi, I'd like to schedule a consultation with EAtek. Please share available slots.");
+                    const message = encodeURIComponent("Hi, I'd like to schedule a consultation with EATek. Please share available slots.");
                     window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
                   }}
                     className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-6 text-lg backdrop-blur-sm rounded-xl bg-white/5"

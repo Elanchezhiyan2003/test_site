@@ -1,7 +1,7 @@
 import { Hero } from '@/components/sections/Hero';
-import { AboutEAtek } from '@/components/sections/AboutEAtek';
+import { AboutEATek } from '@/components/sections/AboutEATek';
 import { Offerings } from '@/components/sections/Offerings';
-import { WhyEAtek } from '@/components/sections/WhyEAtek';
+import { WhyEATek } from '@/components/sections/WhyEATek';
 import { ProgramsFellowships } from '@/components/sections/ProgramsFellowships';
 import ProductShowcase from '@/components/sections/ProductShowcase';
 import { CommunityImpact } from '@/components/sections/CommunityImpact';
@@ -19,11 +19,11 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Hero />
-      <AboutEAtek />
+      <AboutEATek />
       <WhoWeAre />
       <Services />
       <ProductShowcase />
-      <WhyEAtek />
+      <WhyEATek />
       {/* <Offerings /> */}
       {/* <ProgramsFellowships /> */}
       <TestimonialsStack />

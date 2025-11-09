@@ -81,7 +81,7 @@ const FavouriteTools: React.FC = () => {
             Built with <span className="text-orange-500">Modern Tools</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-            At EAtek, we harness cutting-edge technologies to deliver innovative solutions 
+            At EATek, we harness cutting-edge technologies to deliver innovative solutions 
             that empower education and drive technological excellence.
           </p>
         </div>

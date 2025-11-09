@@ -10,9 +10,9 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "What is EAtek?",
+      question: "What is EATek?",
       answer:
-        "EAtek is a convergence-driven company where education, art, and technology meet to craft soulful, scalable, and purposeful digital ecosystems.",
+        "EATek is a convergence-driven company where education, art, and technology meet to craft soulful, scalable, and purposeful digital ecosystems.",
     },
     {
       question: "What kind of services do you provide?",
@@ -20,19 +20,19 @@ export default function FAQ() {
         "We offer full-stack web and SaaS development, creative branding through BrandOS Studio, EdTech learning platforms, and automation with AI integration.",
     },
     {
-      question: "Who can collaborate with EAtek?",
+      question: "Who can collaborate with EATek?",
       answer:
         "We collaborate with startups, educational institutions, creative brands, and innovators who believe in building systems with both emotion and intelligence.",
     },
     {
-      question: "How does EAtek support students and creators?",
+      question: "How does EATek support students and creators?",
       answer:
         "Through programs like the ELAN 20’ BuildVerse Fellowship and our mentorship tracks, we help students and creators gain hands-on industry experience.",
     },
     {
-      question: "Where is EAtek based?",
+      question: "Where is EATek based?",
       answer:
-        "EAtek operates globally with a growing network of digital creators, technologists, and learners — headquartered in India.",
+        "EATek operates globally with a growing network of digital creators, technologists, and learners — headquartered in India.",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function FAQ() {
           Frequently Asked Questions
         </h2>
         <p className="text-black text-lg mb-12">
-          Answers to the most common questions about EAtek’s purpose, platforms, and possibilities.
+          Answers to the most common questions about EATek’s purpose, platforms, and possibilities.
         </p>
       </div>
 

@@ -28,7 +28,7 @@ const TESTIMONIALS = [
     company: "CEO at InnovateLab",
     rating: 5,
     description:
-      "EAtek's approach to bridging education and technology is revolutionary. Their programs don't just teach skills - they inspire innovation.",
+      "EATek's approach to bridging education and technology is revolutionary. Their programs don't just teach skills - they inspire innovation.",
     avatarUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=60",
   },
@@ -39,7 +39,7 @@ const TESTIMONIALS = [
     company: "BuildVerse Participant",
     rating: 5,
     description:
-      "The hands-on experience and mentorship I received helped me land my dream internship. EAtek truly cares about student success.",
+      "The hands-on experience and mentorship I received helped me land my dream internship. EATek truly cares about student success.",
     avatarUrl:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=60",
   },
@@ -50,7 +50,7 @@ const TESTIMONIALS = [
     company: "Tech Innovator",
     rating: 4.5,
     description:
-      "Working with EAtek was a game-changer for my career. Their expertise and professionalism exceeded my expectations.",
+      "Working with EATek was a game-changer for my career. Their expertise and professionalism exceeded my expectations.",
     avatarUrl:
       "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=60",
   },

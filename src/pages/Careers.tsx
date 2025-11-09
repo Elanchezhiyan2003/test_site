@@ -137,7 +137,7 @@ const growthOpportunities = [
   {
     icon: Rocket,
     title: 'Leadership & Entrepreneurship Pathways',
-    description: 'Develop leadership skills and explore entrepreneurial opportunities within EAtek.',
+    description: 'Develop leadership skills and explore entrepreneurial opportunities within EATek.',
     benefits: ['Leadership training', 'Project ownership', 'Startup exposure', 'Innovation labs'],
   },
 ];
@@ -159,7 +159,7 @@ const applicationSteps = [
     icon: Coffee,
     title: 'Join the Team',
     description: 'Start your journey with us where your skills find purpose and your growth is our priority.',
-    tip: 'Welcome to the EAtek family!',
+    tip: 'Welcome to the EATek family!',
   },
 ];
 
@@ -174,7 +174,7 @@ const benefits = [
 
 const faqs = [
   {
-    q: "What kind of people thrive at EAtek?",
+    q: "What kind of people thrive at EATek?",
     a: "We welcome makers, dreamers, and learners who love to merge creativity with logic. If you’re curious, collaborative, and driven by purpose — you’ll fit right in.",
   },
   {
@@ -182,7 +182,7 @@ const faqs = [
     a: "Not necessarily! We value potential over perfection. Freshers and students with a strong portfolio or learning mindset are equally welcome.",
   },
   {
-    q: "How does EAtek support learning and growth?",
+    q: "How does EATek support learning and growth?",
     a: "Through mentorship, project-based learning, fellowship programs, and hands-on product exposure. We make sure every role is a growth curve, not just a job.",
   },
   {
@@ -191,11 +191,11 @@ const faqs = [
   },
   {
     q: "Are remote or hybrid opportunities available?",
-    a: "Yes. EAtek believes in flexibility and trust. Some roles are remote-friendly, while others thrive in our collaborative studio space.",
+    a: "Yes. EATek believes in flexibility and trust. Some roles are remote-friendly, while others thrive in our collaborative studio space.",
   },
   {
     q: "How can I apply?",
-    a: "Visit our Careers page or email us at careers@eatek.in with your portfolio and role of interest.",
+    a: "Visit our Careers page or email us at careers@EATek.in with your portfolio and role of interest.",
   },
 ];
 export default function Careers() {
@@ -247,7 +247,7 @@ export default function Careers() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="mx-auto mt-8 max-w-3xl text-xl text-slate-600 dark:text-slate-400 leading-relaxed"
             >
-              At EAtek, careers aren't just jobs — they're journeys where education, art, technology, and emotion converge. 
+              At EATek, careers aren't just jobs — they're journeys where education, art, technology, and emotion converge. 
               Join a mission-driven company building soulful technology "Beyond the Binary."
             </motion.p>
             
@@ -316,7 +316,7 @@ export default function Careers() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"
             >
-              At EAtek, your work isn't just code or design — it's creation with purpose. 
+              At EATek, your work isn't just code or design — it's creation with purpose. 
           Join a culture where education, art, and technology converge to move both the mind and the heart.
             </motion.p>
       </div>
@@ -348,7 +348,7 @@ export default function Careers() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-16 text-center text-slate-500 dark:text-slate-400 italic text-lg"
           >
-            "At EAtek, you don't just join a team — you join a movement of makers." 🚀
+            "At EATek, you don't just join a team — you join a movement of makers." 🚀
           </motion.p>
         </div>
     </section>
@@ -431,7 +431,7 @@ export default function Careers() {
         </div>
       </section> */}
 
-      {/* Life at EAtek */}
+      {/* Life at EATek */}
       <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]" />
         
@@ -455,7 +455,7 @@ export default function Careers() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-50 dark:via-slate-200 dark:to-slate-50 bg-clip-text text-transparent"
             >
-              Life at EAtek
+              Life at EATek
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -558,7 +558,7 @@ export default function Careers() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"
             >
-              Your career at EAtek is a fellowship in itself. We grow together — personally, professionally, and purposefully.
+              Your career at EATek is a fellowship in itself. We grow together — personally, professionally, and purposefully.
             </motion.p>
           </div>
 
@@ -686,7 +686,7 @@ export default function Careers() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"
             >
-          Everything you need to know before joining the EAtek movement 🚀
+          Everything you need to know before joining the EATek movement 🚀
             </motion.p>
       </div>
 
@@ -784,9 +784,9 @@ export default function Careers() {
                   <Button 
                     size="lg" 
                     onClick={() => {
-                      const subject = encodeURIComponent("Application: I'm interested in joining EAtek");
-                      const body = encodeURIComponent("Hi EAtek team,%0D%0A%0D%0AI'd like to apply for roles at EAtek. Please find my resume attached when you reply for next steps.%0D%0A%0D%0AThanks,");
-                      window.location.href = `mailto:careers@eatek.in?subject=${subject}&body=${body}`;
+                      const subject = encodeURIComponent("Application: I'm interested in joining EATek");
+                      const body = encodeURIComponent("Hi EATek team,%0D%0A%0D%0AI'd like to apply for roles at EATek. Please find my resume attached when you reply for next steps.%0D%0A%0D%0AThanks,");
+                      window.location.href = `mailto:careers@EATek.in?subject=${subject}&body=${body}`;
                     }}
                     className="bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl"
                   >
@@ -801,7 +801,7 @@ export default function Careers() {
                     size="lg"
                     onClick={() => {
                       const phone = '8838567933';
-                      const message = encodeURIComponent("Hi, I have a question about careers at EAtek. Could you please help?");
+                      const message = encodeURIComponent("Hi, I have a question about careers at EATek. Could you please help?");
                       window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
                     }}
                     className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-6 text-lg backdrop-blur-sm rounded-xl bg-white/5"

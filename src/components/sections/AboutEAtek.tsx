@@ -25,7 +25,7 @@ const values = [
   },
 ];
 
-export function AboutEAtek() {
+export function AboutEATek() {
   return (
     // <section className="py-24 sm:py-32">
     //   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -33,11 +33,11 @@ export function AboutEAtek() {
 
           
     //       <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-    //         About EAtek
+    //         About EATek
     //       </h2>
     //       <p className="mt-6 text-lg leading-8 text-muted-foreground">
     //         Born from the intersection of Education, Art, Technology, and Emotion, 
-    //         EAtek represents a new paradigm in digital innovation.
+    //         EATek represents a new paradigm in digital innovation.
     //       </p>
     //     </div>
 

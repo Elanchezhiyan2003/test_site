@@ -1,16 +1,16 @@
 import { TextRotate } from "./TextRotate";
 
 const didYouKnowTips = [
-  "Did you know? EAtek stands for Education, Art, Technology, and Emotion Kinetics - building soulful technology that bridges innovation and human connection.",
-  "Did you know? EAtek's ELAN 20' BuildVerse Fellowship is a transformative program for 9th-12th grade students and passionate learners.",
-  "Did you know? EAtek offers comprehensive services from web development to AI integration, SaaS solutions, and creative branding.",
-  "Did you know? Beyond the Binary isn't just a tagline - it's EAtek's philosophy of merging technology with human emotion and creativity.",
-  "Did you know? EAtek provides internship and apprenticeship opportunities for hands-on learning with real-world projects.",
-  "Did you know? EAtek's fellowship program includes four phases: Ignition, Cohort Circle, BuildVerse, and Internship Curve.",
-  "Did you know? EAtek builds scalable SaaS products and custom learning management systems for educational institutions.",
-  "Did you know? EAtek's team combines technical excellence with creative expression in everything they build.",
-  "Did you know? EAtek offers mentorship programs in tech, career development, and creative fields.",
-  "Did you know? EAtek's mission is to create technology that educates, empowers, and inspires communities.",
+  "Did you know? EATek stands for Education, Art, Technology, and Emotion Kinetics - building soulful technology that bridges innovation and human connection.",
+  "Did you know? EATek's ELAN 20' BuildVerse Fellowship is a transformative program for 9th-12th grade students and passionate learners.",
+  "Did you know? EATek offers comprehensive services from web development to AI integration, SaaS solutions, and creative branding.",
+  "Did you know? Beyond the Binary isn't just a tagline - it's EATek's philosophy of merging technology with human emotion and creativity.",
+  "Did you know? EATek provides internship and apprenticeship opportunities for hands-on learning with real-world projects.",
+  "Did you know? EATek's fellowship program includes four phases: Ignition, Cohort Circle, BuildVerse, and Internship Curve.",
+  "Did you know? EATek builds scalable SaaS products and custom learning management systems for educational institutions.",
+  "Did you know? EATek's team combines technical excellence with creative expression in everything they build.",
+  "Did you know? EATek offers mentorship programs in tech, career development, and creative fields.",
+  "Did you know? EATek's mission is to create technology that educates, empowers, and inspires communities.",
 ].sort(() => Math.random() - 0.5);
 
 export function DidYouKnow() {

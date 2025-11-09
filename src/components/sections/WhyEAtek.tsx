@@ -78,7 +78,7 @@ function AnimatedCounter({ end, suffix = '', duration = 2 }: { end: number; suff
   );
 }
 
-export function WhyEAtek() {
+export function WhyEATek() {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
@@ -140,7 +140,7 @@ export function WhyEAtek() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Why Choose EAtek?
+            Why Choose EATek?
           </motion.h2>
           <motion.p
             className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"

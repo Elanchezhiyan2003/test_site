@@ -71,7 +71,7 @@ const services = [
     icon: <Cpu className="w-8 h-8 text-indigo-500" />,
   },
   {
-    title: "EAtek Labs & Learning Initiatives",
+    title: "EATek Labs & Learning Initiatives",
     desc: "Our research and learning division bridging technology, education, and creativity for the next generation.",
     icon: <GraduationCap className="w-8 h-8 text-indigo-500" />,
   },
@@ -225,7 +225,7 @@ const milestones = [
   {
     year: '2024',
     title: 'Foundation',
-    description: 'EAtek founded by Elanchezhiyan Mahendiran with the vision "Beyond the Binary"',
+    description: 'EATek founded by Elanchezhiyan Mahendiran with the vision "Beyond the Binary"',
     status: 'completed',
   },
   {
@@ -475,7 +475,7 @@ export default function About() {
               
               <div className="relative z-10">
                 <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                  At EAtek, we believe that technology is more than just code — it's an experience shaped by creativity, learning, and human emotion.
+                  At EATek, we believe that technology is more than just code — it's an experience shaped by creativity, learning, and human emotion.
                 </p>
                 <p className="text-lg text-foreground/80 leading-relaxed">
                   Traditional solutions often feel mechanical. We're building something different — a space where design meets function, 
@@ -541,7 +541,7 @@ export default function About() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-4 text-gray-900 text-lg max-w-2xl mx-auto"
         >
-          EAtek stands at the intersection of design, technology, and empathy — crafting digital ecosystems that move the mind and heart.
+          EATek stands at the intersection of design, technology, and empathy — crafting digital ecosystems that move the mind and heart.
         </motion.p>
 
         <div className="mt-20 grid sm:grid-cols-2 gap-10">
@@ -598,7 +598,7 @@ export default function About() {
             What We Do
           </h2>
           <p className="mt-6 text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            At EAtek, we design <span className="font-semibold text-indigo-500">digital ecosystems</span> where technology, art, and learning 
+            At EATek, we design <span className="font-semibold text-indigo-500">digital ecosystems</span> where technology, art, and learning 
             converge — crafting experiences that empower, educate, and evolve.
           </p>
         </motion.div>
@@ -656,7 +656,7 @@ export default function About() {
         </h2>
 
         <p className="text-black text-lg md:text-xl w-[80%] mx-auto leading-relaxed mb-14">
-          At <span className="text-[#40ffaa] font-semibold">EAtek</span>, culture isn’t an afterthought — it’s the framework behind how we think, build, and grow.  
+          At <span className="text-[#40ffaa] font-semibold">EATek</span>, culture isn’t an afterthought — it’s the framework behind how we think, build, and grow.  
           We believe in creating with purpose, learning with empathy, and innovating beyond the binary.
         </p>
 
@@ -742,7 +742,7 @@ export default function About() {
               Meet Our Founder
             </h2>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              The visionary behind EAtek's mission to bridge technology, creativity, and education
+              The visionary behind EATek's mission to bridge technology, creativity, and education
             </p>
           </motion.div>
 
@@ -772,7 +772,7 @@ export default function About() {
                   github: 'https://github.com/Elanchezhiyan2003',
                   linkedin: 'https://www.linkedin.com/in/elanchezhiyanmahendiran',
                   // twitter: 'https://twitter.com',
-                  email: 'emailto:chezhiyanmahi2020@gmail.com',
+                  email: 'chezhiyanmahi2020@gmail.com',
                   instagram: 'https://www.instagram.com/chezhiyanmahendiran/',
                 }}
               />
@@ -792,7 +792,7 @@ export default function About() {
                   github: 'https://github.com',
                   linkedin: 'https://linkedin.com',
                   twitter: 'https://twitter.com',
-                  email: 'contact@eatek.ai',
+                  email: 'contact@EATek.ai',
                 }}
               /> */}
             </motion.div>
@@ -815,9 +815,9 @@ export default function About() {
                         Visionary Leader
                       </h3>
                       <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Elanchezhiyan Mahendiran founded EAtek with a clear vision: to create a space where 
+                        Elanchezhiyan Mahendiran founded EATek with a clear vision: to create a space where 
                         technology, creativity, and education converge. His passion for empowering learners and 
-                        creators drives EAtek's mission to build ecosystems that move both the mind and the heart.
+                        creators drives EATek's mission to build ecosystems that move both the mind and the heart.
                       </p>
                     </div>
                   </div>
@@ -859,7 +859,7 @@ export default function About() {
                     2024
                   </div>
                   <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">
-                    Founded EAtek
+                    Founded EATek
                   </div>
                 </div>
                 <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-4 border border-slate-200/50 dark:border-slate-700/50">
@@ -985,7 +985,7 @@ export default function About() {
               Core Team + Advisory Circle
             </h2>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              The passionate individuals driving EAtek's mission forward
+              The passionate individuals driving EATek's mission forward
             </p>
           </div>
 

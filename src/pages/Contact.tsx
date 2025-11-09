@@ -31,9 +31,9 @@ const contactMethods = [
   {
     icon: Mail,
     title: 'Email',
-    value: 'info@eatek.in',
+    value: 'info@EATek.in',
     description: 'Drop us a line anytime',
-    action: 'mailto:info@eatek.in',
+    action: 'mailto:info@EATek.in',
     color: 'from-blue-500 to-cyan-500',
   },
   {
@@ -82,29 +82,29 @@ const collaborationChannels = [
 //   {
 //     icon: Instagram,
 //     name: 'Instagram',
-//     handle: '@eatek.in',
-//     url: 'https://www.instagram.com/eatekofficial/',
+//     handle: '@EATek.in',
+//     url: 'https://www.instagram.com/EATekofficial/',
 //     color: 'from-pink-500 to-rose-500',
 //   },
 //   {
 //     icon: Linkedin,
 //     name: 'LinkedIn',
-//     handle: 'EAtek',
-//     url: 'https://linkedin.com/company/eatek',
+//     handle: 'EATek',
+//     url: 'https://linkedin.com/company/EATek',
 //     color: 'from-blue-600 to-blue-700',
 //   },
 //   {
 //     icon: Github,
 //     name: 'GitHub',
-//     handle: 'eatek-org',
-//     url: 'https://github.com/eatekofficial',
+//     handle: 'EATek-org',
+//     url: 'https://github.com/EATekofficial',
 //     color: 'from-gray-700 to-gray-900',
 //   },
 // {
 //   icon: Twitter,
 //   name: 'X (Twitter)',
-//   handle: '@eatek_in',
-//   url: 'https://twitter.com/eatek_in',
+//   handle: '@EATek_in',
+//   url: 'https://twitter.com/EATek_in',
 //   color: 'from-gray-800 to-black',
 // },
 // ];
@@ -222,7 +222,7 @@ export default function Contact() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="mx-auto mt-2 max-w-3xl text-xl text-slate-600 dark:text-slate-400 leading-relaxed"
             >
-              Whether you're a learner, creator, or business — EAtek is always open for collaboration.
+              Whether you're a learner, creator, or business — EATek is always open for collaboration.
               Great ideas grow faster when shared. This isn't just a contact page — it's an open door to meaningful conversations.
             </motion.p>
 
@@ -242,7 +242,7 @@ export default function Contact() {
 
                     const phone = '8838567933';
                     const message = encodeURIComponent(
-                      "Hi EAtek,\nI'm interested in learning more about your programs and opportunities. Could we start a quick conversation?"
+                      "Hi EATek,\nI'm interested in learning more about your programs and opportunities. Could we start a quick conversation?"
                     );
                     window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
                   }}
@@ -488,7 +488,7 @@ export default function Contact() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"
             >
-              Whatever your path, EAtek has a space for you. Here's how we can work together.
+              Whatever your path, EATek has a space for you. Here's how we can work together.
             </motion.p>
           </div>
 
@@ -630,13 +630,13 @@ export default function Contact() {
                 <div className="flex gap-2">
                   <Input
                     type="email"
-                    value="info@eatek.in"
+                    value="info@EATek.in"
                     readOnly
                     className="flex-1 rounded-lg text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 cursor-default"
                   />
                   <Button
                     className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 rounded-lg shadow-lg"
-                    onClick={() => window.open('mailto:info@eatek.in')}
+                    onClick={() => window.open('mailto:info@EATek.in')}
                   >
                     Subscribe
                   </Button>
@@ -703,7 +703,7 @@ export default function Contact() {
                 <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
                   <Button
                     size="lg"
-                    onClick={() => window.open('mailto:info@eatek.in')}
+                    onClick={() => window.open('mailto:info@EATek.in')}
                     className="bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl"
                   >
                     <Mail className="mr-2 h-5 w-5" />
@@ -718,7 +718,7 @@ export default function Contact() {
                     onClick={() => {
                       const phone = '8838567933';
                       const message = encodeURIComponent(
-                        "Hi EAtek 👋,\nI’d like to schedule a quick call to discuss collaboration or opportunities. When would be a good time?"
+                        "Hi EATek 👋,\nI’d like to schedule a quick call to discuss collaboration or opportunities. When would be a good time?"
                       );
                       window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
                     }}

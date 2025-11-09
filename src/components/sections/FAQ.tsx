@@ -9,23 +9,23 @@ export default function FAQ() {
 
   const faqs = [
     {
-      q: "What is EAtek?",
-      a: "EAtek is a convergence company blending Education, Art, and Technology — building ecosystems that move both the mind and the heart. We design learning platforms, SaaS tools, and creative systems for the next generation of innovators.",
+      q: "What is EATek?",
+      a: "EATek is a convergence company blending Education, Art, and Technology — building ecosystems that move both the mind and the heart. We design learning platforms, SaaS tools, and creative systems for the next generation of innovators.",
     },
     {
-      q: "What services does EAtek provide?",
+      q: "What services does EATek provide?",
       a: "Our services span Web & SaaS Development, Branding & Creative Design (BrandOS Studio), Learning & EdTech platforms, and Automation + AI integration.",
     },
     {
-      q: "Who can collaborate with EAtek?",
+      q: "Who can collaborate with EATek?",
       a: "We welcome startups, schools, creators, and tech enthusiasts who share our passion for learning, building, and innovating beyond the binary.",
     },
     {
-      q: "What makes EAtek different?",
+      q: "What makes EATek different?",
       a: "We combine technical excellence with emotional design — creating products and programs that are both functional and deeply human-centered.",
     },
     {
-      q: "How can I join or partner with EAtek?",
+      q: "How can I join or partner with EATek?",
       a: "You can reach out through our 'Contact Us' page or email us directly. We're always open to collaborations, internships, and partnership opportunities.",
     },
   ];

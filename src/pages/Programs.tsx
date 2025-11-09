@@ -136,7 +136,7 @@ const programs = [
       icon: <Briefcase className="w-10 h-10 text-[#40ffaa]" />,
       title: "Internship Curve",
       subtitle: "Real Projects. Real Impact.",
-      desc: "Gain hands-on exposure by working with EAtek’s live SaaS and creative products. Learn team dynamics, real-world delivery, and problem-solving beyond the classroom.",
+      desc: "Gain hands-on exposure by working with EATek’s live SaaS and creative products. Learn team dynamics, real-world delivery, and problem-solving beyond the classroom.",
       gradient: "from-[#0a0f1f]/90 to-[#141a2e]/90",
       glow: "hover:shadow-[0_0_20px_#40ffaa55]",
       link: "#application-form",
@@ -618,7 +618,7 @@ export default function Programs() {
               {isSubmitting ? 'Submitting...' : 'Submit Application'}
             </Button>
             <span className="text-xs text-slate-500 dark:text-slate-400">
-              By submitting, you agree to be contacted by the EAtek team.
+              By submitting, you agree to be contacted by the EATek team.
             </span>
           </div>
         </form>
@@ -767,7 +767,7 @@ export default function Programs() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"
             >
-              We believe mentorship is the backbone of growth. Every learner at EAtek is paired with mentors, 
+              We believe mentorship is the backbone of growth. Every learner at EATek is paired with mentors, 
               peers, and guides who create an ecosystem of support.
             </motion.p>
           </div>
@@ -971,7 +971,7 @@ export default function Programs() {
                       const el = document.getElementById('application-form');
                       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                       const phone = '8838567933';
-                      const message = encodeURIComponent("Hi, I'm interested in joining a Bootcamp at EAtek. Could you share next steps?");
+                      const message = encodeURIComponent("Hi, I'm interested in joining a Bootcamp at EATek. Could you share next steps?");
                       window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
                     }}
                       className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-6 text-lg backdrop-blur-sm rounded-xl bg-white/5"
@@ -985,7 +985,7 @@ export default function Programs() {
                     variant="outline"
                     size="lg"
                     onClick={() => {
-                      // open the EAtek WhatsApp group invite in a new tab
+                      // open the EATek WhatsApp group invite in a new tab
                       window.open('https://chat.whatsapp.com/BwCXJZ1njJoAcId2oaaP4T', '_blank');
                     }}
                     className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-6 text-lg backdrop-blur-sm rounded-xl bg-white/5"
