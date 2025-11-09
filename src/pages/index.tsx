@@ -1,7 +1,7 @@
 import { Hero } from '@/components/sections/Hero';
-import { AboutEATek } from '@/components/sections/AboutEATek';
+import { AboutEATek } from '@/components/sections/AboutEAtek';
 import { Offerings } from '@/components/sections/Offerings';
-import { WhyEATek } from '@/components/sections/WhyEATek';
+import { WhyEATek } from '@/components/sections/WhyEAtek';
 import { ProgramsFellowships } from '@/components/sections/ProgramsFellowships';
 import ProductShowcase from '@/components/sections/ProductShowcase';
 import { CommunityImpact } from '@/components/sections/CommunityImpact';
