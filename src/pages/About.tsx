@@ -856,7 +856,7 @@ export default function About() {
               >
                 <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl p-4 border border-slate-200/50 dark:border-slate-700/50">
                   <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                    2024
+                    2025
                   </div>
                   <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">
                     Founded EATek
